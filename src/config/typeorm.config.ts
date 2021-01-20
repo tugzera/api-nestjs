@@ -1,10 +1,6 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { join } from 'path';
 
-import { Task } from '../tasks/task.entity';
-
-console.log(join(__dirname, '../**/**.entity.ts'));
-
 export const typeOrmConfig: TypeOrmModuleOptions = {
   type: 'postgres',
   host: 'localhost',
